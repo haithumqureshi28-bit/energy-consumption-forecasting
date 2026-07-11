@@ -1,0 +1,88 @@
+# Energy Consumption Time Series Forecasting
+
+## Overview
+
+This project focuses on forecasting short-term household energy consumption using historical time series data. Multiple forecasting models, including ARIMA, Prophet, and XGBoost, are implemented and compared to predict future energy usage. The project also includes feature engineering, model evaluation, and visualization of actual versus forecasted energy consumption.
+
+## Dataset
+
+* **Dataset:** Household Power Consumption Dataset
+* **Task:** Time Series Forecasting
+
+## Project Objectives
+
+* Load and preprocess the time series dataset.
+* Parse and resample time-based data.
+* Engineer time-related features such as hour, day, month, and weekday/weekend.
+* Train multiple forecasting models.
+* Compare model performance using MAE and RMSE.
+* Visualize actual and forecasted energy consumption.
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Statsmodels (ARIMA)
+* Prophet
+* XGBoost
+* Jupyter Notebook
+
+## Models Used
+
+* ARIMA
+* Prophet
+* XGBoost Regressor
+
+## Workflow
+
+1. Load the dataset.
+2. Parse datetime values and set the timestamp as the index.
+3. Resample the data to the desired time interval.
+4. Perform Exploratory Data Analysis (EDA).
+5. Engineer time-based features (hour, day, month, weekday/weekend).
+6. Train ARIMA, Prophet, and XGBoost models.
+7. Evaluate each model using MAE and RMSE.
+8. Compare model performance.
+9. Visualize actual versus forecasted energy consumption.
+
+## Results
+
+* Successfully forecasted household energy consumption using three different models.
+* Compared forecasting accuracy using MAE and RMSE.
+* Visualized predictions against actual energy usage.
+* Identified the model with the best forecasting performance.
+
+## Skills Demonstrated
+
+* Time Series Forecasting
+* Time-Based Feature Engineering
+* Data Preprocessing
+* Model Comparison
+* Model Evaluation (MAE, RMSE)
+* Data Visualization
+* Forecast Analysis
+
+## Repository Structure
+
+```text
+energy-consumption-forecasting/
+│
+├── data/
+│   └── household_power_consumption.csv
+│
+├── notebooks/
+│   └── Energy_Forecasting.ipynb
+│
+├── images/
+│   ├── actual_vs_forecast.png
+│   ├── arima_forecast.png
+│   ├── prophet_forecast.png
+│   └── xgboost_forecast.png
+│
+├── README.md
+└── requirements.txt
+```
+
